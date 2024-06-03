@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>ClockWork</title>
+
+    <!--JAVASCRIPT FILES-->
+    <script src="scripts/chart/d3.v4.min.js"></script>
+    <script src="scripts/chart/chart-core.js"></script>
+    <script src="scripts/storage.js"></script>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/webact.js"></script>
+
+    <!--CSS FILES-->
+    <link href="style/webact.css" rel="stylesheet" />
+    <link href="style/chart.css" rel="stylesheet" />
+
+</head>
+
+<body style="background-color: rgba(102, 102, 102, 0.46);">
+
+    <!--PAGE LOAD FAILURE-->
+    <div id="preloader" class="preloader">
+        <div class="preloader__image">
+            <div class="title">Loading...</div>
+        </div>
+    </div>
+    
+    <!--HEADING-->
+    <div id="buttons" class="btn-block">
+    <div style="text-align: center;  color: aliceblue;">
+        <a class="active" id="btnToday" style=" font-size: 30px; color: aliceblue;">Today's Stats</a>
+        </div>   
+    </div>
+
+    <!--FETCH DETAILS-->
+    <div id="stats" class="hide">
+                <div class="block-additional" style="  color: aliceblue;">
+                    <div class="span-time" id="statTodayTime" style="  color: aliceblue;"></div>
+                </div>
+    </div>
+
+    <!--PIE CHART-->
+    <div id="chart" style="  color: aliceblue;"></div>
+    <div id="timeChart" style="  color: aliceblue;"></div>
+
+    <!--VISITED WEBSITES DETAILS-->
+    <div id="resultTable" class="list-of-site" style="  color: aliceblue;"></div>
+    <div id="byDays" class="calendar-block" style="  color: aliceblue;"></div>
+
+</body>
+</html>
+
